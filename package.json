@@ -1,0 +1,19 @@
+{
+  "name": "frontprojetbilan",
+  "version": "1.0.0",
+  "description": "Parti front de breizhvideo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GinoChasles/BreizhVideoFront.git"
+  },
+  "author": "Gino",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GinoChasles/BreizhVideoFront/issues"
+  },
+  "homepage": "https://github.com/GinoChasles/BreizhVideoFront#readme"
+}
