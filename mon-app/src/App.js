@@ -2,18 +2,46 @@
 import './App.css';
 import Film from "./components/Film"
 import Village from "./components/Village"
-
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-      </header>
-    <Film />
-    <Village data={data} apiUrl={"http://localhost:8080/breizvideo/villages"} />
-    </div>
+    <Router>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/evenements">Evénements</Link>
+            </li>
+            <li>
+              <Link to="/films">Films</Link>
+            </li>
+            <li>
+              <Link to="/villages">Villages</Link>
+            </li>
+          </ul>
+        </nav>
+        <Switch>
+          <Route path="/evenements">
+
+          </Route>
+          <Route path="/films">
+            <Film />
+          </Route>
+          <Route path="/villages">
+           <Village data={data} apiUrl={"http://localhost:8080/breizvideo/villages"} />
+          </Route>
+          <Route path="/">
+            <h2>Bienvenue sur le site de BreizhVidéo !</h2>
+          </Route>
+        </Switch>
+    </Router>
   );
 }
 
