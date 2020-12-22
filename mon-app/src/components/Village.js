@@ -16,8 +16,8 @@ export default function Village({data,apiUrl}) {
                 {/* permet d'obtenir la case vide au dessus des liens update et delete tout en gardant le css */}
               <tr>{header}<th>&nbsp;</th></tr>
             </thead>
-            {/*pour chaque objet dans notre data on vient créer une ligne affichant chacune de ses keys avec sa valeur associé ainsi que le lien de l'api pour udapte ou delete avec son id dans le lien*/}
                  <tbody>
+            {/*pour chaque objet dans notre data on vient créer une ligne affichant chacune de ses keys avec sa valeur associé ainsi que le lien de l'api pour udapte ou delete avec son id dans le lien*/}
                 {
                 data.map((row, i) => (
                     <tr key={i} data-index={i} >
