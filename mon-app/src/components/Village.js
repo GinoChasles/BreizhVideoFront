@@ -1,24 +1,22 @@
-import React, {useState,useEffect} from 'react'
+import React from 'react'
 
 
-export default function Village({data, headerInFooter,apiUrl}) {
+export default function Village({data,apiUrl}) {
+    //on récupère les keys de l'objet
     const keys = []
-
     for(let k in data[0]){
         keys.push(k)
     }
-
-
+    //pour chaque key on fait une case header pour nos colonnes
     const header = keys.map((key, index) => <th key={index}>{key}</th>)
-
-
-
     return (
         <>
         <table>
             <thead>
+                {/* permet d'obtenir la case vide au dessus des liens update et delete tout en gardant le css */}
               <tr>{header}<th>&nbsp;</th></tr>
             </thead>
+            {/*pour chaque objet dans notre data on vient créer une ligne affichant chacune de ses keys avec sa valeur associé ainsi que le lien de l'api pour udapte ou delete avec son id dans le lien*/}
                  <tbody>
                 {
                 data.map((row, i) => (
@@ -35,9 +33,7 @@ export default function Village({data, headerInFooter,apiUrl}) {
                 ))
                 }
             </tbody>
-            <tfoot>
-                {headerInFooter ? <tr>{header}</tr> : null}
-            </tfoot>
+
         </table>
         </>
     )
