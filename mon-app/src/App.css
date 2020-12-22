@@ -9,3 +9,15 @@ th > a {
 thead {
     background-color: lightgray;
 }
+nav > ul {
+    list-style: none;
+    display: inline-flex;
+    margin :5px;
+}
+nav > ul > li {
+    margin-right: 50px;
+}
+nav {
+    margin-bottom:5em;
+    font-size:20px;
+}

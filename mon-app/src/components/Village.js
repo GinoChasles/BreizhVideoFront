@@ -22,8 +22,7 @@ export default function Village({data,apiUrl}) {
                 data.map((row, i) => (
                     <tr key={i} data-index={i} >
                        {
-                            keys.map((key, index) => <th key={index}
-                            >{row[key]}</th>)
+                       keys.map((key, index) => <th key={index}>{row[key]}</th>)
                         }
                         <th><a href={apiUrl + `/${i}/update`}>update</a>
 

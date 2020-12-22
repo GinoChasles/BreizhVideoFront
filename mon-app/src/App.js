@@ -32,7 +32,7 @@ function App() {
 
           </Route>
           <Route path="/films">
-            <Film />
+            <Film/>
           </Route>
           <Route path="/villages">
            <Village data={data} apiUrl={"http://localhost:8080/breizvideo/villages"} />
@@ -54,6 +54,13 @@ const data = [
   {name:'180nantes', post_code:'44300'},
   {name:'180nantes', post_code:'44300'}
 ]
+
+const dataFilm=[
+  {id:1, TITLE:"academy dinosaur",DESCRIPTION:"	A Epic Drama of a Feminist And a Mad Scientist who must Battle a Teacher in The Canadian Rockies" ,RELEASE_YEAR:2006,LENGTH:86},
+  {id: 2,TITLE:"ace goldfinger",DESCRIPTION:"A Astounding Epistle of a Database Administrator And a Explorer who must Find a Car in Ancient China" ,RELEASE_YEAR:2006,LENGTH:48},
+  {id: 3,TITLE:"ADAPTATION HOLES",DESCRIPTION:"	A Astounding Reflection of a Lumberjack And a Car who must Sink a Lumberjack in A Baloon Factory" ,RELEASE_YEAR:2006,LENGTH:50}]
+
+
 fetch('http://localhost:8080/breizhvideo/actor/1', {
             headers: {
                 'Content-Type': 'application/json',
