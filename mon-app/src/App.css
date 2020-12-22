@@ -46,3 +46,10 @@ nav {
 .card-header{
     text-align: center;
 }
+
+#ajout {
+    display: block;
+    position: absolute;
+    top:15%;
+    left:55%;
+}
