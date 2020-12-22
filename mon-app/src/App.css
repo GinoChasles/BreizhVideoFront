@@ -1,0 +1,11 @@
+tr, th, td {
+border: 1px black solid;
+padding: 10px;
+text-align: center;
+}
+th > a {
+    padding: 5px;;
+}
+thead {
+    background-color: lightgray;
+}

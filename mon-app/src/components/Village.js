@@ -17,7 +17,7 @@ export default function Village({data, headerInFooter,apiUrl}) {
         <>
         <table>
             <thead>
-              <tr>{header}</tr>
+              <tr>{header}<th>&nbsp;</th></tr>
             </thead>
                  <tbody>
                 {
@@ -28,8 +28,8 @@ export default function Village({data, headerInFooter,apiUrl}) {
                             >{row[key]}</th>)
                         }
                         <th><a href={apiUrl + `/${i}/update`}>update</a>
-                        </th>
-                        <th><a href={apiUrl + `/${i}/delete`}>delete</a>
+
+                        <a href={apiUrl + `/${i}/delete`}>delete</a>
                         </th>
                     </tr>
                 ))
