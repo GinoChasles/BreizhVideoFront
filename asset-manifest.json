@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/BreizhVideoFront/static/css/main.0d4a4f51.chunk.css",
+    "main.js": "/BreizhVideoFront/static/js/main.b3acbf10.chunk.js",
+    "main.js.map": "/BreizhVideoFront/static/js/main.b3acbf10.chunk.js.map",
+    "runtime-main.js": "/BreizhVideoFront/static/js/runtime-main.733fce02.js",
+    "runtime-main.js.map": "/BreizhVideoFront/static/js/runtime-main.733fce02.js.map",
+    "static/js/2.a5a52af6.chunk.js": "/BreizhVideoFront/static/js/2.a5a52af6.chunk.js",
+    "static/js/2.a5a52af6.chunk.js.map": "/BreizhVideoFront/static/js/2.a5a52af6.chunk.js.map",
+    "index.html": "/BreizhVideoFront/index.html",
+    "static/css/main.0d4a4f51.chunk.css.map": "/BreizhVideoFront/static/css/main.0d4a4f51.chunk.css.map",
+    "static/js/2.a5a52af6.chunk.js.LICENSE.txt": "/BreizhVideoFront/static/js/2.a5a52af6.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.733fce02.js",
+    "static/js/2.a5a52af6.chunk.js",
+    "static/css/main.0d4a4f51.chunk.css",
+    "static/js/main.b3acbf10.chunk.js"
+  ]
+}
