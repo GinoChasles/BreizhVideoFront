@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/GinoChasles/BreizhVideoFront/issues"
   },
-  "homepage": "https://github.com/GinoChasles/BreizhVideoFront#readme"
+  "homepage": "https://github.com/GinoChasles/BreizhVideoFront#readme",
+  "dependencies": {
+    "boostrap": "^2.0.0",
+    "react-bootstrap": "^1.4.0"
+  }
 }
